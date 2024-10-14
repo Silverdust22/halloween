@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+     background-color:black;
+   }
+   
+  .container {
+    cursor: pointer;
+    position: relative;
+    border: solid .5vw goldenrod;
+    width: 40vw; 
+    height: auto;
+    left: 30vw;
+  }
+  
+  .fadeEffect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto; 
+    width: 40vw; 
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+
+   .container:hover .fadeEffect {
+    opacity: 1;
+    box-shadow: 0 0 1.5vw 1.5vw goldenrod;
+  }
+
+  #img1,#img2 {
+    height: auto;
+    max-width: 40vw;
+   }
+     
+  #title {
+    position: sticky;
+    bottom: 90vw; 
+    color: orangered;
+    font-family: Griffy,Creepster,serif ;
+    font-size: 3vw;
+  }
+  
+  .footer h3 {
+    color: orangered;
+    font-family: Griffy,Creepster,serif;
+    font-size: 2.35vw;
+    padding-left: 22vw;
+  }
+
+  /* to hide sound bar*/
+  #audio{
+    visibility: hidden;
+  }
+
+  /*media query for mobile------------------------------------------------------------*/
+  @media only screen and (max-width: 640px){ 
+  .container {
+    width: 80vw; 
+    height: auto;
+    left: 10vw;
+  }
+
+  .fadeEffect {
+    width: 80vw; 
+  }
+
+  .container:hover .fadeEffect {
+    box-shadow: 0 0 2vw 2vw goldenrod;
+  }
+
+  #img1,#img2 {
+    max-width: 80vw;
+  }
+
+  #title {
+    bottom: 150vw;     
+    font-size: 6vw;
+  }
+
+  .footer h3 {
+    font-size: 4vw;
+    padding-left: 2vw;
+  }
+     
+}
+  /*media query for mobile ends*/
+
+/*media query for tablet---------------------------------------------------------------*/
+@media only screen and (min-width: 639px) and (max-width: 850px){ 
+.container {
+    width: 60vw; 
+    left: 18vw;
+ }
+
+.fadeEffect {
+  width: 60vw; 
+ }
+
+ .container:hover .fadeEffect {
+    box-shadow: 0 0 1.65vw 1.65vw goldenrod;
+}
+
+#img1,#img2 {
+  max-width: 60vw;
+ }
+
+#title {
+    bottom: 82vw;     
+    font-size: 5vw;
+ }
+
+.footer h3 {
+    font-size: 4vw;
+    padding-left: 5vw;
+ }
+}
+/*media query for tablet ends*/
