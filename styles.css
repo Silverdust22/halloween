@@ -90,14 +90,14 @@ body{
   /*media query for mobile ends*/
 
 /*media query for tablet---------------------------------------------------------------*/
-@media only screen and (min-width: 639px) and (max-width: 850px){ 
+@media only screen and (min-width: 641px) and (max-width: 850px){ 
 .container {
-    width: 60vw; 
-    left: 18vw;
+    width: 75vw; 
+    left: 13vw;
  }
 
 .fadeEffect {
-  width: 60vw; 
+  width: 75vw; 
  }
 
  .container:hover .fadeEffect {
@@ -105,11 +105,11 @@ body{
 }
 
 #img1,#img2 {
-  max-width: 60vw;
+  max-width: 75vw;
  }
 
 #title {
-    bottom: 82vw;     
+    bottom: 95vw;     
     font-size: 5vw;
  }
 
