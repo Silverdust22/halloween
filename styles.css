@@ -1,16 +1,21 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background-color:black;
+    background-color:navajowhite;
    }
    
   .container {
     cursor: pointer;
     position: relative;
-    border: solid .5vw goldenrod;
+    border: solid .5vw orange;
     width: 40vw; 
     height: auto;
     left: 30vw;
+  }
+
+  span{
+    font-size:2vw;
+    color:black;
   }
   
   .fadeEffect {
@@ -28,7 +33,7 @@ body{
 
    .container:hover .fadeEffect {
     opacity: 1;
-    box-shadow: 0 0 1.5vw 1.5vw goldenrod;
+    box-shadow: 0 0 1.5vw 1.5vw orange;
   }
 
   #img1,#img2 {
@@ -69,7 +74,7 @@ body{
   }
 
   .container:hover .fadeEffect {
-    box-shadow: 0 0 2vw 2vw goldenrod;
+    box-shadow: 0 0 2vw 2vw orange;
   }
 
   #img1,#img2 {
@@ -81,16 +86,21 @@ body{
     font-size: 6vw;
   }
 
+  span{
+    font-size:6vw;
+    color:black;
+  }
+
   .footer h3 {
-    font-size: 4vw;
-    padding-left: 2vw;
+    font-size: 6vw;
+    padding-left: 3vw;
   }
      
 }
   /*media query for mobile ends*/
 
 /*media query for tablet---------------------------------------------------------------*/
-@media only screen and (min-width: 641px) and (max-width: 850px){ 
+@media only screen and (min-width: 641px) and (max-width: 750px){ 
 .container {
     width: 75vw; 
     left: 13vw;
@@ -101,7 +111,7 @@ body{
  }
 
  .container:hover .fadeEffect {
-    box-shadow: 0 0 1.65vw 1.65vw goldenrod;
+    box-shadow: 0 0 1.65vw 1.65vw orange;
 }
 
 #img1,#img2 {
@@ -109,9 +119,14 @@ body{
  }
 
 #title {
-    bottom: 95vw;     
+    bottom: 100vw;     
     font-size: 5vw;
  }
+
+ span{
+  font-size:4vw;
+  color:black;
+}
 
 .footer h3 {
     font-size: 4vw;
